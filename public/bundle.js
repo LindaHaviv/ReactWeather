@@ -14132,7 +14132,7 @@ var Examples = function Examples(props) {
   return React.createElement(
     'h3',
     null,
-    'Examples Component'
+    'Examples'
   );
 };
 
@@ -15137,8 +15137,8 @@ module.exports = {
       } else {
         return res.data.main.temp;
       }
-    }, function (res) {
-      throw new Error(res.data.message);
+    }, function () {
+      throw new Error('Unable to fetch weather.');
     });
   }
 };
